@@ -1,0 +1,118 @@
+/* Sliding Panels iPhone Stylesheet */
+
+.dmxSlidingPanels.iphone {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+    -webkit-text-size-adjust: none;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsHeader {
+    position: relative;
+    background: url('header.png') top repeat-x;
+    min-height: 40px;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsFooter {
+    position: relative;
+    background: url('footer.png') bottom repeat-x;
+    min-height: 40px;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsView {
+    background: #666 -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+    background-image: -moz-linear-gradient(top, #666, #333);
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsTitle {
+    padding: 10px;
+    line-height: 23px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsStatus {
+    padding: 10px;
+    line-height: 23px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNav {
+    height: 40px;
+    background-color: #000;
+    background-image: url('nav.png');
+    text-align: center;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNav ul {
+    float: none;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNav li {
+	float: none;
+	display: inline;
+	zoom: 1;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNav a {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    padding: 0 5px;
+    margin: 6px 0 0 0;
+    line-height: 28px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+    outline: none;
+    text-shadow:none;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNav a.selected {
+	color: #FFF; 
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsPrev a,
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNext a {
+    z-index: 100;
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    text-indent: -10000px;
+    font-size: 0;
+    overflow: hidden;
+    outline: none;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsPrev a {
+    top: 10px;
+    left: 10px;
+    background-image: url('prev.png');
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNext a {
+    top: 10px;
+    right: 10px;
+    background-image: url('next.png');
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsFooter .dmxSlidingPanelsPrev a,
+.dmxSlidingPanels.iphone .dmxSlidingPanelsFooter .dmxSlidingPanelsNext a {
+    top: auto;
+    bottom: 11px;
+}
+
+.dmxSlidingPanels.iphone .dmxSlidingPanelsPrev a.disabled,
+.dmxSlidingPanels.iphone .dmxSlidingPanelsNext a.disabled {
+    visibility: visible;
+    opacity: 0.25;
+}

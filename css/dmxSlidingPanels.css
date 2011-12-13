@@ -1,0 +1,125 @@
+/* Sliding Panels Default Stylesheet */
+
+.dmxSlidingPanels {
+	overflow: hidden;
+}
+
+.dmxSlidingPanelsHeader {
+	zoom: 1; /* IE Fix */
+	overflow: hidden;
+}
+
+.dmxSlidingPanelsHeader:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.dmxSlidingPanelsView {
+	min-height: 200px;
+	overflow: hidden;
+}
+
+.dmxSlidingPanelsFooter {
+	zoom: 1; /* IE Fix */
+	overflow: hidden;
+}
+
+.dmxSlidingPanelsFooter:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.dmxSlidingPanelsPage {
+	background-color: #fff;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.dmxSlidingPanelsScrollbar {
+	background-color: #ccc;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	opacity: 0.9;
+}
+
+.dmxSlidingPanelsTitle {
+	text-align: center;
+}
+
+.dmxSlidingPanelsPrev {
+	float: left;
+}
+
+.dmxSlidingPanelsPrev a {
+}
+
+.dmxSlidingPanelsPrev a.disabled {
+	visibility: hidden;
+}
+
+.dmxSlidingPanelsNext {
+	float: right;
+}
+
+.dmxSlidingPanelsNext a {
+}
+
+.dmxSlidingPanelsNext a.disabled {
+	visibility: hidden;
+}
+
+.dmxSlidingPanelsNav {
+	zoom: 1; /* IE Fix */
+	overflow: hidden;
+	clear: both;
+}
+
+.dmxSlidingPanelsNav:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.dmxSlidingPanelsNav ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.dmxSlidingPanelsNav li {
+	display: block;
+	float: left;
+	list-style: none;
+}
+
+.dmxSlidingPanelsNav a {
+	display: block;
+	padding: 5px;
+	white-space: nowrap;
+}
+
+.dmxSlidingPanelsNav a.selected {
+
+}
+
+.dmxSlidingPanelsStatus {
+	text-align: center;
+}
+
+.dmxSlidingPanelsCurrentPage {
+
+}
+
+.dmxSlidingPanelsTotalPages {
+
+}
+
